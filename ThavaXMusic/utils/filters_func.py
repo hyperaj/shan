@@ -1,7 +1,7 @@
 from enum import Enum, auto
-from DAXXMUSIC import app
+from ThavaXMusic import app
 from pyrogram.types import InlineKeyboardMarkup, Message
-from DAXXMUSIC.utils.msg_types import button_markdown_parser
+from ThavaXMusic.utils.msg_types import button_markdown_parser
 from DAXXMUSIC.utils.notes_func import NoteFillings
 from emojis import decode
 from pyrogram.types import Message
