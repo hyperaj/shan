@@ -73,7 +73,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="𝐎𝐰𝐧𝐞𝐫", url=f"https://t.me/Idhayann"),           
         ],
         [
-        InlineKeyboardButton(text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url=f"https://t.me/musicheavenupdates),
+        InlineKeyboardButton(text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url=f"https://t.me/musicheavenupdates"),
         InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
         ]
     ]
@@ -94,7 +94,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="𝐎𝐰𝐧𝐞𝐫", url=f"https://t.me/Idhayann"),           
         ],
         [
-        InlineKeyboardButton(text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url=f"https://t.me/musicheavenupdates),
+        InlineKeyboardButton(text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url=f"https://t.me/musicheavenupdates"),
         InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
         ]
     ]
