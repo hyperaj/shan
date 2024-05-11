@@ -187,29 +187,30 @@ async def greet_new_member(_, member: ChatMemberUpdated):
             welcomeimg = welcomepic(
                 pic, user.first_name, member.chat.title, user.id, user.username
             )
-            button_text = "๏ 𝐕𝐢𝐞𝐰 𝐍𝐞𝐰 𝐌𝐞𝐦𝐛𝐞𝐫 ๏"
-            add_button_text = "๏ 𝐓𝐚𝐤𝐞 𝐌𝐞 𝐃𝐚𝐫𝐥𝐢𝐧𝐠 ๏"
+            button_text = "ᴠɪᴇᴡ ɴᴇᴡ ᴍᴇᴍʙᴇᴇ"
+            add_button_text = "ᴀᴅᴅ ᴍᴇ"
             deep_link = f"tg://openmessage?user_id={user.id}"
             add_link = f"https://t.me/{app.username}?startgroup=true"
             temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
                 member.chat.id,
                 photo=welcomeimg,
                 caption=f"""
-**❅────✦ ᴡᴇʟᴄᴏᴍᴇ ✦────❅**
+╭──────⌁᳀⌁╾─────╮              
+     [𝐓ᴇᴀᴍ 𝐇ʏᴘᴇʀ 𝐍ᴇᴛᴡᴏʀᴋ](https://t.me/Hyper_networks_updates)
+╰─────╼⌁᳀⌁╾─────╯
 
-▰▰▰▰▰▰▰▰▰▰▰▰▰
+•┈┈••┈┈••••●••••┈┈••┈┈•
 
-**🍃 ɴᴀᴍᴇ »** {user.mention}
+**❄︎ ɴᴀᴍᴇ »** {user.mention}
 
-**🍃 ɪᴅ »** `{user.id}`
+**❄︎ ɪᴅ »** `{user.id}`
 
-**🍃 ᴜ_ɴᴀᴍᴇ »** @{user.username}
+**❄︎ ᴜ_ɴᴀᴍᴇ »** @{user.username}
 
-**🍃 ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀs »** {count}
+**❄︎ ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀs »** {count}
 
-▰▰▰▰▰▰▰▰▰▰▰▰▰
+•┈┈••┈┈••••●••••┈┈••┈┈•
 
-**❅─────✧❅✦❅✧─────❅**
 """,
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton(button_text, url=deep_link)],
