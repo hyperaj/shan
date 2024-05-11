@@ -11,7 +11,7 @@ from ThavaXMusic.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID, START_IMG_URL
 
 
-@app.on_message(filters.command(["addsudo"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]) & filters.user(OWNER_ID))
+@app.on_message(filters.command(["hypersudo"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]) & filters.user(OWNER_ID))
 @language
 async def useradd(client, message: Message, _):
     if not message.reply_to_message:
@@ -48,7 +48,7 @@ async def userdel(client, message: Message, _):
 
 GAMDOP = START_IMG_URL
 
-@app.on_message(filters.command(["sudolist", "listsudo", "sudoers"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]) & ~BANNED_USERS)
+@app.on_message(filters.command(["hyperlist"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]) & ~BANNED_USERS)
 async def sudoers_list(client, message: Message):
     keyboard = [[InlineKeyboardButton(" sᴜᴅᴏʟɪsᴛ ", callback_data="check_sudo_list")]]
     reply_markups = InlineKeyboardMarkup(keyboard)
