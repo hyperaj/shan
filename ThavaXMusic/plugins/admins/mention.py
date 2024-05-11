@@ -9,7 +9,7 @@ from ThavaXMusic.utils.thava_ban import admin_filter
 SPAM_CHATS = []
 
 
-@app.on_message(filters.command(["mention", "all"]) & filters.group & admin_filter)
+@app.on_message(filters.command(["mention", "all","all"]) & filters.group & admin_filter)
 async def tag_all_users(_,message): 
     replied = message.reply_to_message  
     if len(message.command) < 2 and not replied:
@@ -22,8 +22,8 @@ async def tag_all_users(_,message):
         async for m in app.get_chat_members(message.chat.id): 
             if message.chat.id not in SPAM_CHATS:
                 break       
-            usernum += 5
-            usertxt += f"\n⊚ [{m.user.first_name}](tg://user?id={m.user.id})\n"
+            usernum += 10
+            usertxt += f"\n❄︎ [{m.user.first_name}](tg://user?id={m.user.id})\n"
             if usernum == 1:
                 await replied.reply_text(usertxt)
                 await asyncio.sleep(2)
