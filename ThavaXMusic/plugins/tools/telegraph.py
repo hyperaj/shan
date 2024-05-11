@@ -7,10 +7,10 @@ from ThavaXMusic import app
 def ul(_, message):
     reply = message.reply_to_message
     if reply.media:
-        i = message.reply("𝐌aking 𝐀 𝐋ink 𝐎f 𝐘our 𝐃ocument 𝐁aby....")
+        i = message.reply("ᴍᴏᴅᴜɴᴊᴜᴛʜᴜ ")
         path = reply.download()
         fk = upload_file(path)
         for x in fk:
             url = "https://telegra.ph" + x
 
-        i.edit(f'🇾ᴏᴜʀ🇹ᴇʟᴇɢʀᴀᴘʜ 👉 {url}')
+        i.edit(f'ʟɪɴᴋ ʀᴇᴀᴅʏ ᴍᴀᴍᴀ{url}')
