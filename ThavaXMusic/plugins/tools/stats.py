@@ -131,5 +131,5 @@ async def bot_stats(client, CallbackQuery, _):
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
         await CallbackQuery.message.reply_video(
-            photo="https://telegra.ph/file/d728d0134b855ad83b07b.mp4", caption=text, reply_markup=upl
+            video="https://telegra.ph/file/d728d0134b855ad83b07b.mp4", caption=text, reply_markup=upl
         )
