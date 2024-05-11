@@ -14,7 +14,7 @@ from ThavaXMusic.mongo.couples_db import _get_image, get_couple
 POLICE = [
     [
         InlineKeyboardButton(
-            text="𓊈⟶͇̽𖤥 𝐓꯭ ᴇ ᴀ ᴍ꯭𝀈꯭𝐇 ʏ ᴘ꯭ ᴇ ʀ꯭ 𖤥𓆪꯭𝆺꯭𝅥⎯꯭̽.𓊉",
+            text="𝐓ᴇᴀᴍ 𝐇ʏᴘᴇʀ",
             url=f"https://t.me/Team_Hypers_Networks",
         ),
     ],
@@ -106,11 +106,11 @@ async def ctest(_, message):
          img.save(f'test_{cid}.png')
     
          TXT = f"""
-**ᴛᴏᴅᴀʏ's ᴄᴏᴜᴘʟᴇ ᴏғ ᴛʜᴇ ᴅᴀʏ :
+**ɪɴʀᴀɪʏᴀ ᴊᴏᴅɪ ᴘᴜʀᴀ:
 
-{N1} + {N2} = 💚
+{N1} + {N2} = 💙
 
-ɴᴇxᴛ ᴄᴏᴜᴘʟᴇs ᴡɪʟʟ ʙᴇ sᴇʟᴇᴄᴛᴇᴅ ᴏɴ {tomorrow} !!**
+ɴᴀᴋᴀɪᴋɪ ᴠᴀɴɢᴀ ᴍᴀᴘʟᴀ {tomorrow} !!**
 """
     
          await message.reply_photo(f"test_{cid}.png", caption=TXT, reply_markup=InlineKeyboardMarkup(POLICE),
@@ -132,11 +132,11 @@ async def ctest(_, message):
         # c2_name = (await app.get_users(c2_id)).first_name
          
       #   TXT = f"""
-#**𝐓ᴏᴅᴀʏ's 𝐒ᴇʟᴇᴄᴛᴇᴅ 𝐂ᴏᴜᴘʟᴇs 🎉 :
+#**ɪɴʀᴀɪʏᴀ ᴊᴏᴅɪ ᴘᴜʀᴀ :
 #➖➖➖➖➖➖➖➖➖➖➖➖
 #[{c1_name}](tg://openmessage?user_id={c1_id}) + [{c2_name}](tg://openmessage?user_id={c2_id}) = ❣️
 #➖➖➖➖➖➖➖➖➖➖➖➖
-#𝐍ᴇxᴛ 𝐂ᴏᴜᴘʟᴇs 𝐖ɪʟʟ 𝐁ᴇ 𝐒ᴇʟᴇᴄᴛᴇᴅ 𝐎ɴ {tomorrow} !!**
+#ɴᴀᴋᴀɪᴋɪ ᴠᴀɴɢᴀ ᴍᴀᴘʟᴀ {tomorrow} !!**
 #"""
  #        await message.reply_photo(b, caption=TXT)
         # await msg.delete()
