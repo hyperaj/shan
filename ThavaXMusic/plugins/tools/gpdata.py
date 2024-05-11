@@ -21,15 +21,15 @@ async def pin(_, message):
     name = message.from_user.mention
     
     if message.chat.type == enums.ChatType.PRIVATE:
-        await message.reply_text("**ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡᴏʀᴋs ᴏɴʟʏ ᴏɴ ɢʀᴏᴜᴘs !**")
+        await message.reply_text("**ᴅᴇɪ ᴘᴀɴɴᴀᴅᴀ ɢʀᴘ ʟᴀ ᴘᴏᴅᴜ ᴅᴀ**")
     elif not replied:
-        await message.reply_text("**ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴘɪɴ ɪᴛ !**")
+        await message.reply_text("**ᴀᴛʜᴀɴ ᴘɪɴ ᴘᴀᴍɴɪᴛʜᴀʟᴀ ᴋᴇʟᴀᴍʙᴜ**")
     else:
         user_stats = await app.get_chat_member(chat_id, user_id)
         if user_stats.privileges.can_pin_messages and message.reply_to_message:
             try:
                 await message.reply_to_message.pin()
-                await message.reply_text(f"**sᴜᴄᴄᴇssғᴜʟʟʏ ᴘɪɴɴᴇᴅ ᴍᴇssᴀɢᴇ!**\n\n**ᴄʜᴀᴛ:** {chat_title}\n**ᴀᴅᴍɪɴ:** {name}", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(" 📝 ᴠɪᴇᴡs ᴍᴇssᴀɢᴇ ", url=replied.link)]]))
+                await message.reply_text(f"**sᴜᴄᴄᴇssғᴜʟʟʏ ᴘɪɴɴᴇᴅ ᴍᴇssᴀɢᴇ!**\n\n**ᴄʜᴀᴛ:** {chat_title}\n**ᴀᴅᴍɪɴ:** {name}", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(" ᴍsɢ ʜᴀ ᴘᴀᴅᴜ ᴅᴀ ᴅᴏᴍᴀʀᴜ ", url=replied.link)]]))
             except Exception as e:
                 await message.reply_text(str(e))
 
@@ -38,10 +38,10 @@ async def pin(_, message):
 async def pinned(_, message):
     chat = await app.get_chat(message.chat.id)
     if not chat.pinned_message:
-        return await message.reply_text("**ɴᴏ ᴘɪɴɴᴇᴅ ᴍᴇssᴀɢᴇ ғᴏᴜɴᴅ**")
+        return await message.reply_text("**ɴɪ ɪɴɢᴀ ᴏʀᴜ ᴀɴɪʏᴜᴍ ᴘᴜᴅᴜɴɢᴀʟᴀ**")
     try:        
-        await message.reply_text("ʜᴇʀᴇ ɪs ᴛʜᴇ ʟᴀᴛᴇsᴛ ᴘɪɴɴᴇᴅ ᴍᴇssᴀɢᴇ",reply_markup=
-        InlineKeyboardMarkup([[InlineKeyboardButton(text="📝 ᴠɪᴇᴡ ᴍᴇssᴀɢᴇ",url=chat.pinned_message.link)]]))  
+        await message.reply_text("ɪɴɢᴀ ᴛʜᴀɴᴅᴀ ɪʀᴜᴋᴜ ᴘɪɴ ᴍsɢ",reply_markup=
+        InlineKeyboardMarkup([[InlineKeyboardButton(text="ᴍsɢ ʜᴀ ᴘᴀʀᴜᴅᴀ ᴅᴏᴍᴀʀᴜ",url=chat.pinned_message.link)]]))  
     except Exception as er:
         await message.reply_text(er)
 
@@ -57,15 +57,15 @@ async def unpin(_, message):
     name = message.from_user.mention
     
     if message.chat.type == enums.ChatType.PRIVATE:
-        await message.reply_text("**ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡᴏʀᴋs ᴏɴʟʏ ᴏɴ ɢʀᴏᴜᴘs !**")
+        await message.reply_text("**ᴅᴇɪ ᴘᴀɴɴᴀᴅᴀ ɢʀᴘ ʟᴀ ᴘᴏᴅᴜ ᴅᴀ**")
     elif not replied:
-        await message.reply_text("**ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴜɴᴘɪɴ ɪᴛ !**")
+        await message.reply_text("**ᴋᴇʟᴀᴍʙᴜ ᴋᴇʟᴀᴍʙᴜ **")
     else:
         user_stats = await app.get_chat_member(chat_id, user_id)
         if user_stats.privileges.can_pin_messages and message.reply_to_message:
             try:
                 await message.reply_to_message.unpin()
-                await message.reply_text(f"**sᴜᴄᴄᴇssғᴜʟʟʏ ᴜɴᴘɪɴɴᴇᴅ ᴍᴇssᴀɢᴇ!**\n\n**ᴄʜᴀᴛ:** {chat_title}\n**ᴀᴅᴍɪɴ:** {name}", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(" 📝 ᴠɪᴇᴡs ᴍᴇssᴀɢᴇ ", url=replied.link)]]))
+                await message.reply_text(f"**ᴠᴀʀᴀᴛʜᴀ ᴍᴀᴍᴇᴀ ᴅᴏʀʀʀʀ.....**\n\n**ᴄʜᴀᴛ:** {chat_title}\n**ᴀᴅᴍɪɴ:** {name}", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(" ᴍsɢ ʜᴀ ᴘᴀʀᴜ ᴅᴀ ᴅᴏᴍᴀʀᴜ ", url=replied.link)]]))
             except Exception as e:
                 await message.reply_text(str(e))
 
