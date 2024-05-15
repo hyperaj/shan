@@ -24,7 +24,7 @@ from config import BANNED_USERS
 async def stats_global(client, message: Message, _):
     upl = stats_buttons(_, True if message.from_user.id in SUDOERS else False)
     await message.reply_video(
-        video="https://telegra.ph/file/d728d0134b855ad83b07b.mp4",
+        video="https://telegra.ph/file/23e824354df683b00d2d7.mp4",
         caption=_["gstats_2"].format(app.mention),
         reply_markup=upl,
     )
@@ -63,7 +63,7 @@ async def overall_stats(client, CallbackQuery, _):
         config.AUTO_LEAVING_ASSISTANT,
         config.DURATION_LIMIT_MIN,
     )
-    med = InputMediaPhoto(media="https://telegra.ph/file/d728d0134b855ad83b07b.mp4", caption=text)
+    med = InputMediaPhoto(media="https://telegra.ph/file/23e824354df683b00d2d7.mp4", caption=text)
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
@@ -126,10 +126,10 @@ async def bot_stats(client, CallbackQuery, _):
         call["collections"],
         call["objects"],
     )
-    med = InputMediaPhoto(media="https://telegra.ph/file/d728d0134b855ad83b07b.mp4", caption=text)
+    med = InputMediaPhoto(media="https://telegra.ph/file/23e824354df683b00d2d7.mp4", caption=text)
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
         await CallbackQuery.message.reply_video(
-            video="https://telegra.ph/file/d728d0134b855ad83b07b.mp4", caption=text, reply_markup=upl
+            video="https://telegra.ph/file/23e824354df683b00d2d7.mp4", caption=text, reply_markup=upl
         )
