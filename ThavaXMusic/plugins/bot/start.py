@@ -27,9 +27,9 @@ from strings import get_string
 #--------------------------
 
 NEXI_VID = [
-"https://telegra.ph/file/d728d0134b855ad83b07b.mp4",
-"https://telegra.ph/file/d728d0134b855ad83b07b.mp4",
-"https://telegra.ph/file/d728d0134b855ad83b07b.mp4",
+"https://telegra.ph/file/23e824354df683b00d2d7.mp4",
+"https://telegra.ph/file/23e824354df683b00d2d7.mp4",
+"https://telegra.ph/file/23e824354df683b00d2d7.mp4",
 
 ]
 
