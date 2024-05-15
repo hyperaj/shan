@@ -26,7 +26,7 @@ def private_panel(_):
         ],
         [InlineKeyboardButton(text="🦋 ʜᴇʟᴘ 🤍", callback_data="settings_back_helper")],
         [
-            InlineKeyboardButton(text="🦋 ɴᴇᴛᴡᴏʀᴋ 🤍", url=f"https://t.me/Team_Hypers_Networks),
+            InlineKeyboardButton(text="🦋 ɴᴇᴛᴡᴏʀᴋ 🤍", url=f"https://t.me/Team_Hypers_Networks"),
             InlineKeyboardButton(text="🦋 ᴜᴘᴅᴀᴛᴇ 🤍", url=config.SUPPORT_CHANNEL),
         ],
         [
