@@ -30,8 +30,8 @@ def private_panel(_):
             InlineKeyboardButton(text="🦋 ᴜᴘᴅᴀᴛᴇ 🤍", url=config.SUPPORT_CHANNEL),
         ],
         [
-            InlineKeyboardButton(text="🦋 ᴏᴡɴᴇʀ 🤍", user_id=config.OWNER_ID),
-            InlineKeyboardButton(text="🦋 ᴏᴡɴᴇʀ 🤍", url=f"https://t.me/Pretty_lau_ra"),
+            InlineKeyboardButton(text="🦋 ᴏᴡɴᴇʀ 🤍", url=f"https://t.me/Pretty_lau_ra),
+            InlineKeyboardButton(text="🦋 ᴘᴇᴀᴄᴇ ᴡᴏʀʟᴅ 🤍", url=f"https://t.me/Celestialangelss"),
         ],
     ]
     return buttons
