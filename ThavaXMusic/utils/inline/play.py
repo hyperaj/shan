@@ -70,7 +70,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
                  [
             InlineKeyboardButton(text="𝄞 ɴᴇᴛᴡᴏʀᴋ 𝄞", url=f"https://t.me/Team_Hypers_Networks"),
-            InlineKeyboardButton(text="𝄞 ᴏᴡɴᴇʀ 𝄞", url=f"https://t.me/only_go_can_judgehimm"),           
+            InlineKeyboardButton(text="𝄞 ᴏᴡɴᴇʀ 𝄞", url=f"https://t.me/only_god_can_judgehimm"),           
         ],
         [
         InlineKeyboardButton(text="𝄞 ᴜᴘᴅᴀᴛᴇ 𝄞", url=f"https://t.me/Hyper_networks_updates"),
@@ -91,7 +91,7 @@ def stream_markup(_, chat_id):
         ],
                  [
             InlineKeyboardButton(text="𝄞 ɴᴇᴛᴡᴏʀᴋ 𝄞", url=f"https://t.me/Team_Hypers_Networks"),
-            InlineKeyboardButton(text="𝄞 ᴏᴡɴᴇʀ 𝄞", url=f"https://t.me/only_go_can_judgehimm"),           
+            InlineKeyboardButton(text="𝄞 ᴏᴡɴᴇʀ 𝄞", url=f"https://t.me/only_god_can_judgehimm"),           
         ],
         [
         InlineKeyboardButton(text="𝄞 ᴜᴘᴅᴀᴛᴇ 𝄞", url=f"https://t.me/Hyper_networks_updates"),
