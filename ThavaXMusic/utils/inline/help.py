@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 def first_page(_):
-	controll_button = [InlineKeyboardButton(text="◁", callback_data=f"ThavaX2"), InlineKeyboardButton(text="🦋 ʙᴀᴄᴋ 🤍", callback_data=f"settingsback_helper"), InlineKeyboardButton(text="▷", callback_data=f"ThavaX1")]
+	controll_button = [InlineKeyboardButton(text="◁", callback_data=f"ThavaX2"), InlineKeyboardButton(text="𝄞 ʙᴀᴄᴋ 𝄞", callback_data=f"settingsback_helper"), InlineKeyboardButton(text="▷", callback_data=f"ThavaX1")]
 	first_page_menu = InlineKeyboardMarkup(
 		[
 			[InlineKeyboardButton(text=_["H_B_1"], callback_data="help_callback hb1"), InlineKeyboardButton(text=_["H_B_2"], callback_data="help_callback hb2"),InlineKeyboardButton(text=_["H_B_3"], callback_data="help_callback hb3")],
@@ -19,7 +19,7 @@ def first_page(_):
 
 
 def second_page(_):
-	controll_button = [InlineKeyboardButton(text="◁", callback_data=f"settings_back_helper_fixed"), InlineKeyboardButton(text="🦋 ʙᴀᴄᴋ 🤍", callback_data=f"settingsback_helper"), InlineKeyboardButton(text="▷", callback_data=f"settings_back_helper")]
+	controll_button = [InlineKeyboardButton(text="◁", callback_data=f"settings_back_helper_fixed"), InlineKeyboardButton(text="𝄞 ʙᴀᴄᴋ 𝄞", callback_data=f"settingsback_helper"), InlineKeyboardButton(text="▷", callback_data=f"settings_back_helper")]
 	second_page_menu = InlineKeyboardMarkup(
 		[
 			[InlineKeyboardButton(text=_["H_B_10"], callback_data="help_callback hb10"), InlineKeyboardButton(text=_["H_B_11"], callback_data="help_callback hb11"), InlineKeyboardButton(text=_["H_B_12"], callback_data="help_callback hb12")],
