@@ -20,17 +20,17 @@ def private_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=""🍁 ᴀᴅᴅ ᴍᴇ 🍂",",
+                text="🍁 ᴀᴅᴅ ᴍᴇ 🍂",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
-        [InlineKeyboardButton(text=""🍁 ʜᴇʟᴘ 🍂",", callback_data="settings_back_helper")],
+        [InlineKeyboardButton(text="🍁 ʜᴇʟᴘ 🍂", callback_data="settings_back_helper")],
         [
-            InlineKeyboardButton(text=""🍁 ɴᴇᴛᴡᴏʀᴋ 🍂",", url=f"https://t.me/Team_Hypers_Networks"),
-            InlineKeyboardButton(text=""🍁 ᴜᴘᴅᴀᴛᴇ 🍂",", url=f"https://t.me/Hypers_Networks_updates"),
+            InlineKeyboardButton(text="🍁 ɴᴇᴛᴡᴏʀᴋ 🍂", url=f"https://t.me/Team_Hypers_Networks"),
+            InlineKeyboardButton(text="🍁 ᴜᴘᴅᴀᴛᴇ 🍂", url=f"https://t.me/Hypers_Networks_updates"),
         ],
         [
-            InlineKeyboardButton(text=""🍁 ᴏᴡɴᴇʀ 🍂",", url=f"https://t.me/only_god_can_judgehimm"),
+            InlineKeyboardButton(text="🍁 ᴏᴡɴᴇʀ 🍂", url=f"https://t.me/only_god_can_judgehimm"),
             InlineKeyboardButton(text="🍁 Dᴇᴠᴇʟᴏᴘᴇʀ 🍂", url=f"https://t.me/King_0f_izzy"),
         ],
     ]
