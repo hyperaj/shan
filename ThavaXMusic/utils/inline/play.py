@@ -73,8 +73,8 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="🍁 ᴏᴡɴᴇʀ 🍂", url=f"https://t.me/only_god_can_judgehimm"),           
         ],
         [
-        InlineKeyboardButton(text="🍁 ᴜᴘᴅᴀᴛᴇ 🍂", url=f"https://t.me/Hyper_networks_updates"),
-        InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
+            InlineKeyboardButton(text="🍁 ᴜᴘᴅᴀᴛᴇ 🍂", url=f"https://t.me/Hyper_networks_updates"),
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
         ]
     ]
     return buttons
@@ -94,8 +94,8 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="🍁 ᴏᴡɴᴇʀ 🍂", url=f"https://t.me/only_god_can_judgehimm"),           
         ],
         [
-        InlineKeyboardButton(text="🍁 ᴜᴘᴅᴀᴛᴇ 🍂", url=f"https://t.me/Hyper_networks_updates"),
-        InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
+            InlineKeyboardButton(text="🍁 ᴜᴘᴅᴀᴛᴇ 🍂", url=f"https://t.me/Hyper_networks_updates"),
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
         ]
     ]
     return buttons
